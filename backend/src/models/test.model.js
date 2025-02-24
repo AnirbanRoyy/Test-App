@@ -23,6 +23,14 @@ const testSchema = new mongoose.Schema(
         description: {
             type: String,
         },
+        date: {
+            type: Date,
+            required: true,
+        },
+        time: {
+            type: String,
+            required: true,
+        },
     },
     { timestamps: true }
 );
